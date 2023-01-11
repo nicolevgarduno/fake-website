@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: beaufort-pro, serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .navbar {
@@ -201,8 +203,9 @@
 }
 }
 
+/*hero section*/
 .main {
-    background-color: #fff;
+    background-color: #e8d0d9;
 }
 
 .main_container {
@@ -212,20 +215,116 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #fff;
+    background-color: #e8d0d9;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
 }
 
-.main_content h1 {
+
+/* edits the look of THE GRAND BRUNO HALL PODCAST */
+.main__content h1 {
     font-size: 4 rem;
     background-color: #e8d0d9;
-    background-image: linear-gradient(to top, #e590a5 0%, #e8d0d9, 100%);
+    background-image: linear-gradient(to top, #dac291 0%, #dac291 /* i didnt know whether the gradient looked good or not so i just deleted it*/
+     100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+
+/* edits the look of the Listen Now button before animation*/
+.main__btn {
+    font-size: 1 rem;
+    background-image: linear-gradient(to top, #e590a5 0%, #e590a5 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+/* gets rid of the underline of the words */
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* changes the color when you are hovering over Listen Now*/
+.main__btn:after {
+    position: absolute;
+    content: ''; /* makes it to when you hover over it, nothing is there except for the color*/
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #75638b;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+#main__img {
+    height: 80%;
+    width: 80%;
+}
+
+/* phone annd tablet responsive */
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and(max-width: 480px) {
+
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
