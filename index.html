@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEW Website</title>
+    <title>The Grand Bruno Hall Podcast</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+    </style>
+    <style>
+        h2 {
+            font-family: 'Arvo', serif;
+        }
+    </style>
 </head>
 <body> 
     <nav class="navbar">
@@ -18,22 +30,22 @@
             </div> <!--Creating the different tabs of the website-->
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="index.html" class="navbar__links">
                         Home
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
+                    <a href="#podcast" class="navbar__links" >
                         Podcast
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="AboutUs.html" class="navbar__links">
                         About Us
                     </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">
+                    <a href="Support.html" class="button">
                         Support
                     </a>
                 </li>
@@ -45,18 +57,65 @@
         <div class = "main">
             <div class = "main__container">
                 <div class="main__content">
-                    <h1>THE GRAND BRUNO HALL PODCAST</h1>
-                    <button class="main__btn"><a href="/">Listen Now</a></button>
+                    <section>
+                        <h1>Hello World...</h1>
+                        <h2>
+                            Welcome to the Grand Bruno Hall Podcast Website
+                        </h2>
+                    </section>
+                    <!--<button class="main__btn"><a href="/">Listen Now</a></button>-->
           </div>  
           <div class="main__img--container">
             <img src="images/The Grand Bruno Hall Square.png" alt="Edited picture of the original Wes Anderson movie, The Grand Budapest Hotel, where the hotel is Bruno Residenece Hall. A campus cat and the Chev are in the background on the mountains. Arching over the whole photo is the title: The Grand Bruno Hall. Underneath reads: STARRING BSC STUDENTS AND FACULTY, BELLA AYALA, CO-HOST, MALLIE TAYLOR, PRODUCER, NICOLE VILLAVICENCIO-GARDUÑO, CO-HOST" id="main__img">
-          </div>
-         <!-- <div class="main_img--container">
-            <img src="images/The Grand Bruno Hall Square.png" alt="pic" id="main__img">-->
-          </div>
         </div>
     </div>
-     <script src="app.js"></script>
-    </body>
+    </div>
+    <div class="episodes">
+        <div>
+            <section id = "podcast">
+                <h1>
+                    Podcasts
+                </h1>
+            </section>
+        </div>
+        <div class="episodes__container"> 
+            <div class="episodes__card">
+                <h2>Latest Episode</h2>
+                <p>Taylor Romans</p>
+                <button>Watch Now</button>
+            </div>
+            <div class="episodes__card">
+                <h2>Previous Episode</h2>
+                <p>Introduction</p>
+                <button>Watch Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Suggestions</h2>
+                    <a href="/">Let us know</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Stay in the Loop</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Spotify</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <p class="website__rights">The Grand Bruno Hall 2023. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+        <script src="app.js"></script>
+     </body>
 </html>
 
