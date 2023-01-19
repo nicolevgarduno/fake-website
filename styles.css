@@ -2,13 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: beaufort-pro, serif;
+    font-family: 'Arvo', serif;
     font-style: normal;
     font-weight: 300;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* this is creating the naviation bar for the main menu */
 .navbar {
-    background: #e8d0d9;
+    background: #75638b;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -45,6 +50,7 @@
     font-size: 2rem;
 }
 
+/* this is useless */
 .fa-gem {
     margin-right: 0.5rem;
 }
@@ -78,6 +84,7 @@
     width: 100%;
 }
 
+/* creates the Support Us button on the navigation menu */
 .button {
     display: flex;
     justify-content: center;
@@ -103,7 +110,7 @@
     transition: all 0.3s ease;
 }
 
-/* for phones and tablets*/
+/* creates home screen navigation bar for phones and tablets*/
 @media screen and (max-width: 960px) { /* when it hits 960px, trigger these classes*/
     .navbar__container {
         display: flex;
@@ -203,7 +210,7 @@
 }
 }
 
-/*hero section*/
+/* home screen section*/
 .main {
     background-color: #e8d0d9;
 }
@@ -215,7 +222,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #e8d0d9;
+    background-color: #e590a5;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -225,47 +232,67 @@
 
 /* edits the look of THE GRAND BRUNO HALL PODCAST */
 .main__content h1 {
-    font-size: 4 rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8rem;
+    border-color: #e8d0d9;
+    background: hsl(338, 34%, 86%);
+    padding-top: 8rem;
+    position: center;
     background-color: #e8d0d9;
+    text-align: center;
     background-image: linear-gradient(to top, #dac291 0%, #dac291 /* i didnt know whether the gradient looked good or not so i just deleted it*/
      100%);
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 2rem;
+    border-color: #e8d0d9;
+    color: #dac291;
+    position: center;
+    text-align: center;
+    
 }
 
 
 /* edits the look of the Listen Now button before animation*/
+/*
 .main__btn {
-    font-size: 1 rem;
-    background-image: linear-gradient(to top, #e590a5 0%, #e590a5 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
+    font-size: 1 rem;.....
+    background-image: linear-gradient(to top, #2f292a 0%, #e590a5 100%);
+    padding: 14px 32px;/////////
+    border: none;///////////
+    border-radius: 4px;////////
+    color: #fff;///////
     margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
+    cursor: pointer;/////
+    position: relative;////////
     transition: all 0.35s;
-    outline: none;
+    outline: none;////////
 }
+*/
 
 
-/* gets rid of the underline of the words */
+/* gets rid of the underline of the words 
 .main__btn a {
     position: relative;
     z-index: 2;
     color: #fff;
     text-decoration: none;
 }
-
+*/
 
 /* changes the color when you are hovering over Listen Now*/
+/*
 .main__btn:after {
     position: absolute;
-    content: ''; /* makes it to when you hover over it, nothing is there except for the color*/
+    content: ''; makes it to when you hover over it, nothing is there except for the color
     top: 0;
     left: 0;
     width: 0;
@@ -275,6 +302,7 @@
     border-radius: 4px;
 }
 
+
 main__btn:hover {
     color: #fff;
 }
@@ -282,17 +310,19 @@ main__btn:hover {
 .main__btn:hover:after {
     width: 100%;
 }
+*/
 
 .main__img--container {
+    margin-top: 8rem;
     text-align: center;
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    height: 50%;
+    width: 50%;
 }
 
-/* phone annd tablet responsive */
+/*  creates home screen for phone annd tablet responsive */
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
@@ -327,4 +357,237 @@ main__btn:hover {
         margin: 2.5rem 0;
     }
 }
+
+/* episode section on home page*/
+.episodes h1 {
+    font-size: 8rem;
+    margin-top: 8rem;
+    color: #dac291;
+}
+
+.episodes {
+    background: #e8d0d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 60rem;
+}
+
+
+.episodes__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Taylor's card */
+.episodes__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/taylor.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+/* Introduction card*/
+.episodes__card:nth-child(2) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/bmn.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+.episodes h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.episodes__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.episodes__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #e590a5;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+
+
+.episodes__card button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #75638b;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+episodes__card button:hover {
+    color: #fff;
+}
+
+.episodes__card button:hover:after {
+    width: 100%;
+}
+
+
+/* makes the cover card have a little pulse affect */
+.episodes__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .episodes {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .episodes {
+        height: 1400px;
+    }
+
+    .episodes__card {
+        width: 300px;
+    }
+}
+
+/* footer */
+.footer__container {
+    background-color: #75638b;
+    border-color: #e8d0d9;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    align-items: center;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2{
+    margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
+    color: #dac291;
+}
+
+.footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    color: #dac291;
+    transition: 0.3s ease-out;
+}
+/*
+.social__media {
+    max-width: 1000px;
+    width: 100%;
+}*/
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.website__rights {
+    color: #dac291;
+    /*align-items: center; */
+    /*justify-content: center;*/
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 820px) {
+    .footer__links {
+        padding-top: 2rem;
+    }
+
+    .website__rights {
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website__rights p{
+        align-items: center; 
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+    }
+
+    .footer__link--wrapper {
+        flex-direction: column;
+    }
+
+    .social__media--wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__link--items {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+/* plug in spotify and youtube links with each diffeernt episode card */
+
+
+
 
