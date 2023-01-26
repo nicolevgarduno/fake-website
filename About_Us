@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Bruno Hall Podcast</title>
+    <link rel="stylesheet" href="aboutStyles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style>
+        
+        h1 {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+    </style>
+    <style>
+        h2 {
+            font-family: 'Arvo', serif;
+        }
+    </style>
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="navbar__container">
+          <!--  <a href="/" id="navbar__logo">The Grand Bruno Hall Podcast</a>-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> <!--Creating the different tabs of the website-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#podcast" class="navbar__links" >
+                        Podcast
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="AboutUs.html" class="navbar__links">
+                        About Us
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="Support.html" class="button">
+                        Support
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="about">
+    <h1>About Us</h1>
+    <p> Hello listeners! Thank Your for listening to The Grand Bruno Hall Podcast.<br> The purpose of this podcast is 
+        to explore the different lives of students<br> 
+        and staff at Birmingham-Southern College. If you know BSC you know<br>
+        about E-Term! So in the month of January in 2023 Co-Host Bella Ayala and<br>
+        Nicole Villavicencio-Garduño along with Producer Mallie Taylor set out to <br>
+        reach a goal of creating eight audio and video episodes with different topics<br>
+        and guest. In addition, building a website using Html and CSS to access each<br>
+        episode on the website and linking other listening platforms like Spotify and<br>
+        YouTube. We are excited to be able to have an opprotunity to create a project<br>
+        about the amazing school we attend.
+    </p>
+    </div>
+  
+ 
+ <!-- add pics of creators -->
+
+    <div class="episodes">
+        <div>
+            <section id = "podcast">
+                <h1>
+                    Creators
+                </h1>
+            </section>
+        </div>
+        <div class="episodes__container"> 
+            
+            
+            <div class="episodes__card">
+                <h2>Co-Host</h2>
+                <p>Bella Ayala</p>
+                <button>Info</button>
+            </div>
+            <div class="episodes__card">
+                <h2>Producer</h2>
+                <p>Mallie Taylor</p>
+                <button>Info</button>
+            </div>
+            <div class="episodes__card">
+                <h2>Co-Host</h2>
+                <p>Nicole Villavicencio-Garduño</p>
+                <button>Info</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- figure out dropdown btn to add links below -->
+
+
+    <!--<a href="https://www.instagram.com/bella.ayalaaa/">Bella's Instagram</a>
+    <a href="https://www.instagram.com/nicolevgarduno/">Nicole's Instagram</a>
+a href="https://www.instagram.com/mallietayl0r/">Mallie's Instagram</a>
+    Email: <a href= "mailto: igayala@bsc.edu">Bella's email</a>
+    Email: <a href= "mailto: nvillavi@bsc.edu">Nicole's email</a>
+    Email: <a href= "mailto: mbtaylor@bsc.edu">Mallie's email</a> -->
+
+   <script src="script.js"></script>
+
+ <!-- Footer section -->
+ <div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Suggestions</h2>
+                <a href="/">Let us know</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Stay in the Loop</h2>
+                <a href="/">Instagram</a>
+                <a href="/">YouTube</a>
+                <a href="/">Spotify</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <p class="website__rights">The Grand Bruno Hall 2023. All rights reserved</p>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+ </body>
+</html>
+</body>
+</html>
+
