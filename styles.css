@@ -260,39 +260,53 @@ html {
     
 }
 
-
-/* edits the look of the Listen Now button before animation*/
 /*
 .main__btn {
-    font-size: 1 rem;.....
+    font-size: 1 rem;
     background-image: linear-gradient(to top, #2f292a 0%, #e590a5 100%);
-    padding: 14px 32px;/////////
-    border: none;///////////
-    border-radius: 4px;////////
-    color: #fff;///////
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
     margin-top: 2rem;
-    cursor: pointer;/////
-    position: relative;////////
+    cursor: pointer;
+    position: relative;
     transition: all 0.35s;
-    outline: none;////////
+    outline: none;
 }
-*/
 
 
-/* gets rid of the underline of the words 
+.main__btn {
+    font-size: 1 rem;
+    background-image: linear-gradient(to top, #2f292a 0%, #e590a5 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+
 .main__btn a {
     position: relative;
     z-index: 2;
     color: #fff;
     text-decoration: none;
 }
-*/
 
 /* changes the color when you are hovering over Listen Now*/
+
+
+
 /*
 .main__btn:after {
     position: absolute;
-    content: ''; makes it to when you hover over it, nothing is there except for the color
+    content: ''; /*makes it to when you hover over it, nothing is there except for the color
     top: 0;
     left: 0;
     width: 0;
@@ -300,7 +314,7 @@ html {
     background: #75638b;
     transition: all 0.35s;
     border-radius: 4px;
-}
+} 
 
 
 main__btn:hover {
@@ -310,7 +324,9 @@ main__btn:hover {
 .main__btn:hover:after {
     width: 100%;
 }
+
 */
+
 
 .main__img--container {
     margin-top: 8rem;
@@ -386,8 +402,20 @@ main__btn:hover {
     flex-wrap: wrap;
 }
 
-/* Taylor's card */
+/* alexis's card */
 .episodes__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/alexis.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+/* Taylor's card */
+.episodes__card:nth-child(2) {
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -399,7 +427,7 @@ main__btn:hover {
 }
 
 /* Introduction card*/
-.episodes__card:nth-child(2) {
+.episodes__card:nth-child(3) {
     margin: 1rem;
     height: 525px;
     width: 400px;
