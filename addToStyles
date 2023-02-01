@@ -1,3 +1,4 @@
+/*
 /* episode section on home page*/
 .episodes h1 {
     font-size: 8rem;
@@ -117,3 +118,4 @@ episodes__card button:hover {
         width: 300px;
     }
 }
+*/
