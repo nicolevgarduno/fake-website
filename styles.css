@@ -339,7 +339,7 @@ main__btn:hover {
     width: 50%;
 }
 
-/*  creates home screen for phone annd tablet responsive */
+/*tablet responsive */
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
@@ -367,11 +367,16 @@ main__btn:hover {
     }
 }
 
+/*iphone*/
 @media screen and(max-width: 480px) {
 
     .main__content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 3rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
     }
 
     .main__btn {
@@ -511,6 +516,19 @@ main__btn:hover {
     .episodes__card {
         width: 300px;
     }
+
+    .episodes__card:nth-child(2) {
+        width: 300px
+    }
+
+    .episodes__card:nth-child(3) {
+        width: 300px
+    }
+
+    .episodes h1 {
+        font-size: 3rem;
+    }
+
 }
 
 
@@ -975,6 +993,7 @@ main__btn:hover {
 
 @media screen and (max-width: 480px) {
     .footer__link--items {
+        padding-top: 5rem;
         margin: 0;
         padding: 10px;
         width: 100%;
@@ -983,6 +1002,9 @@ main__btn:hover {
 /* plug in spotify and youtube links with each diffeernt episode card */
 
 /*trying to make a drop down for the podcast episode card options*/
+
+
+
 
 
 
