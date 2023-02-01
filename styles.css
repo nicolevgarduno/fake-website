@@ -7,6 +7,7 @@
     font-weight: 300;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -222,7 +223,7 @@ html {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #e590a5;
+    background-color: #e8d0d9;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -480,7 +481,7 @@ main__btn:hover {
 }
 */
 
-episodes__card button:hover {
+.episodes__card button:hover {
     color: #fff;
 }
 
@@ -565,6 +566,307 @@ support__btn:hover {
 
 .support__btn:hover:after {
     width: 100%;
+}
+
+
+/* about */
+.about {
+    background-color: #e8d0d9;
+}
+
+
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #e8d0d9;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+/* edits the look of THE GRAND BRUNO HALL PODCAST */
+.about__content h1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8rem;
+    border-color: #e8d0d9;
+    background: hsl(338, 34%, 86%);
+    padding-top: 8rem;
+    position: center;
+    background-color: #e8d0d9;
+    text-align: center;
+    background-image: linear-gradient(to top, #dac291 0%, #dac291 /* i didnt know whether the gradient looked good or not so i just deleted it*/
+     100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+
+.about__content h2 {
+    font-size: 2rem;
+    border-color: #e8d0d9;
+    color: #dac291;
+    position: center;
+    text-align: center;
+    white-space: initial;
+    overflow: hidden;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #e8d0d9;
+
+}
+
+/*
+.main__btn {
+    font-size: 1 rem;
+    background-image: linear-gradient(to top, #2f292a 0%, #e590a5 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+.main__btn {
+    font-size: 1 rem;
+    background-image: linear-gradient(to top, #2f292a 0%, #e590a5 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* changes the color when you are hovering over Listen Now*/
+
+
+
+/*
+.main__btn:after {
+    position: absolute;
+    content: ''; /*makes it to when you hover over it, nothing is there except for the color
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #75638b;
+    transition: all 0.35s;
+    border-radius: 4px;
+} 
+
+
+main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+*/
+
+
+/*  creates home screen for phone annd tablet responsive */
+@media screen and (max-width: 768px) {
+    .about__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .about__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .about__btn {
+        padding: 15px 45px;
+        margin: 4.5rem 0;
+    }
+}
+
+@media screen and(max-width: 480px) {
+
+    .about__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .about__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+
+
+/* episode section on home page*/
+.creators h1 {
+    font-size: 8rem;
+    padding-top: 8rem;
+    color: #dac291;
+}
+
+.creators {
+    background: #e8d0d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 60rem;
+}
+
+
+.creators__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* alexis's card */
+.creators__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/bellaSolo.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+/* Taylor's card */
+.creators__card:nth-child(2) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/mallieSolo.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+/* Introduction card*/
+.creators__card:nth-child(3) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/nicoleSolo.jpg');
+    background-size: cover;
+    position: relative;
+    color: #75638b;
+}
+
+.creators h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.creators__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.creators__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #e590a5;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+
+/*
+.episodes__card button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #75638b;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+*/
+
+.creators__card button:hover {
+    color: #fff;
+}
+
+.creators__card button:hover:after {
+    width: 100%;
+}
+
+
+/* makes the cover card have a little pulse affect */
+.creators__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .creators {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .creators {
+        height: 1400px;
+    }
+
+    .creators__card {
+        width: 300px;
+    }
 }
 
 
@@ -681,6 +983,7 @@ support__btn:hover {
 /* plug in spotify and youtube links with each diffeernt episode card */
 
 /*trying to make a drop down for the podcast episode card options*/
+
 
 
 
