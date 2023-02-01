@@ -750,6 +750,7 @@ main__btn:hover {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
 }
 
 
@@ -885,6 +886,18 @@ main__btn:hover {
     .creators__card {
         width: 300px;
     }
+
+    .creators__card:nth-child(2) {
+        width: 300px
+    }
+
+    .creators__card:nth-child(3) {
+        width: 300px
+    }
+
+    .creators h1 {
+        font-size: 3rem;
+    }
 }
 
 
@@ -993,7 +1006,7 @@ main__btn:hover {
 
 @media screen and (max-width: 480px) {
     .footer__link--items {
-        padding-top: 5rem;
+        padding-top: 10rem;
         margin: 0;
         padding: 10px;
         width: 100%;
@@ -1002,11 +1015,6 @@ main__btn:hover {
 /* plug in spotify and youtube links with each diffeernt episode card */
 
 /*trying to make a drop down for the podcast episode card options*/
-
-
-
-
-
 
 
 
