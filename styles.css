@@ -530,7 +530,8 @@ main__btn:hover {
         font-size: 3rem;
     }
 
-    .episodes__container {
+
+    .footer__container {
         padding-bottom: 10rem;
     }
 
@@ -746,6 +747,12 @@ main__btn:hover {
     .creators__container {
         padding-top: 10rem;
     }
+
+    .about__content h1 {
+    }
+
+    .about__content h2 {
+    }
 }
 
 @media screen and(max-width: 480px) {
@@ -891,6 +898,33 @@ main__btn:hover {
     }
 }
 
+@media screen and(max-width:768px) {
+    .creators__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .creators__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .creators__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .creators__btn {
+        padding: 15px 45px;
+        margin: 4.5rem 0;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .creators {
         height: 1400px;
@@ -910,8 +944,20 @@ main__btn:hover {
 
     .creators h1 {
         font-size: 3rem;
+        margin-top: 3rem;
     }
+
+    .creators h2 {
+        font-size: 2rem;
+    }
+    /*
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+    */
 }
+
 
 
 
@@ -1028,6 +1074,10 @@ main__btn:hover {
 /* plug in spotify and youtube links with each diffeernt episode card */
 
 /*trying to make a drop down for the podcast episode card options*/
+
+
+
+
 
 
 
